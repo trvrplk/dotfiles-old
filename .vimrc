@@ -5,7 +5,9 @@ execute pathogen#infect()
 
 syntax on
 set background=dark
-colorscheme molokai
+let g:solarized_termtrans = 1
+let g:solarized_termcolors=256
+colorscheme solarized
 
 let g:jekyll_path = "~/Blog"
 
@@ -160,3 +162,8 @@ let g:TextileBrowser = "Google Chrome"
 let g:SuperTabDefaultCompletionType = "context"
 
 runtime macros/matchit.vim
+
+au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+
+"let g:Powerline_symbols       = 'fancy'
+let g:Powerline_colorscheme   = 'solarized256'
