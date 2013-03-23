@@ -1,0 +1,38 @@
+[user]
+	name = weddingcakes
+	email = keymint1498@gmail.com
+
+[github]
+  user = weddingcakes
+
+
+[alias]
+	co   = checkout
+  b   = branch
+  st   = status -s
+  df   = diff
+  dc   = diff --cached
+  lg   = log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  l = "!. ~/.githelpers && pretty_git_log"
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  wd   = diff --word-diff
+  pom = push origin master
+  p = push
+  ci = commit
+  h = !git head
+  div = divergence
+
+[credential]
+	helper = osxkeychain
+
+[color]
+  ui = true
+
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[merge]
+  tool = opendiff
+[mergetool "splice"]
+  cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+  trustExitCode = true

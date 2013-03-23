@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/myface13214/.vim/bundle'
+let g:netrw_dirhist_2='/Users/myface13214/.vim/bundle/filepirate'
+let g:netrw_dirhist_3='/Users/myface13214/opt/slide/cover-me/one'
+let g:netrw_dirhist_4='/Users/myface13214/etc/clones/pow/src'
+let g:netrw_dirhist_5='/Users/myface13214/src/rb/playcake/config'
+let g:netrw_dirhist_6='/Users/myface13214/src/rb/playcake/spec/factories'
+let g:netrw_dirhist_7='/Users/myface13214/src/rb/playcake/app/assets/javascripts'
+let g:netrw_dirhist_8='/Users/myface13214/.vim'

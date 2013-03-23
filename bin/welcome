@@ -1,0 +1,4 @@
+#! /usr/bin/perl
+
+system("echo 'http://bit.ly/TYKhBi' | pbcopy");
+print("Welcome to the internet sign now in pasteboard.\n");

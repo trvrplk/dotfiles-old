@@ -1,0 +1,4 @@
+#! /usr/bin/perl
+
+system("echo 'http://bit.ly/TrFXYX' | pbcopy");
+print("Dancing baby now in you pasteboard.\n");

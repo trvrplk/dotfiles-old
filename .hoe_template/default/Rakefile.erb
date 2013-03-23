@@ -1,0 +1,23 @@
+# -*- ruby -*-
+
+require 'hoe'
+
+Hoe.plugin :gemcutter
+Hoe.plugin :roodi
+Hoe.plugin :test
+Hoe.plugin :bundler
+Hoe.plugin :travis
+Hoe.plugin :git
+Hoe.plugins.delete :rubyforge
+
+Hoe.spec '<%= project %>' do
+  developer('weddingcakes', 'keymint1498@gmail.com')
+	license ''
+  extra_deps << ['rspec'     ]
+  extra_deps << ['rr'        ]
+  extra_deps << ['simplecov' ]
+
+  self.readme_file = "README.mkd"
+end
+
+# vim: syntax=ruby

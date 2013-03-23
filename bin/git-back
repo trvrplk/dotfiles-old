@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+@branch = `echo $(git branch | grep "*" | sed "s/* //")`
+
+`git branch attaching`
+`git checkout attaching`
+`git branch -f master attaching`
+`git checkout #{ARGV[0] || "master"}`
+`git branch -d attaching`

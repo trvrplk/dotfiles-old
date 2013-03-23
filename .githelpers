@@ -1,0 +1,24 @@
+#!/bin/bash
+HASH="%C(yellow)%h%C(reset)"
+RELATIVE_TIME="%C(green)%ar%C(reset)"
+AUTHOR="%C(bold blue)%an%C(reset)"
+REFS="%C(red)%d%C(reset)"
+SUBJECT="%s"
+FORMAT="$HASH{$RELATIVE_TIME{$AUTHOR{$REFS $SUBJECT"
+
+function pretty_git_log() {
+  git log --graph --pretty="tformat:$FORMAT" $*|
+  sed 's/30 minutes/half an hour/' |
+  sed 's/31 minutes/half an hour/' |
+  sed 's/32 minutes/half an hour/' |
+  sed 's/34 minutes/half an hour/' |
+  sed 's/35 minutes/half an hour/' |
+  sed 's/36 minutes/half an hour/' |
+  sed 's/37 minutes/half an hour/' |
+  sed 's/38 minutes/half an hour/' |
+  sed 's/39 minutes/half an hour/' |
+  sed 's/origin/o/' |
+  sed 's/master/m/' |
+  column -t -s '{' |
+  less -FXRS
+}

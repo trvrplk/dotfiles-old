@@ -1,0 +1,4 @@
+#! /usr/bin/perl
+
+system("echo 'http://bit.ly/WUlr2y' | pbcopy");
+print("Spinning earth now in pastebin\n");

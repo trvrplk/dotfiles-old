@@ -1,0 +1,4 @@
+#! /usr/bin/perl
+
+system("printf 'http://bit.ly/VdR2v8' | pbcopy ");
+print("Mailbox now in your pasteboard.\n");
